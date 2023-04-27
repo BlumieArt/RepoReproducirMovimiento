@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://detkl8kqbfvat"]
+
+[ext_resource type="PackedScene" uid="uid://cvy8dipes744o" path="res://escenas/personaje/personaje.tscn" id="1_ojyq0"]
+[ext_resource type="PackedScene" uid="uid://dd51a2lbq64jn" path="res://escenas/plataforma/plataforma.tscn" id="2_hal5a"]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="Personaje" parent="." instance=ExtResource("1_ojyq0")]
+z_index = 5
+position = Vector2(300, 219)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_hal5a")]
+position = Vector2(-42, 652)
+scale = Vector2(1, 2)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_hal5a")]
+position = Vector2(16, 734)
+rotation = -1.5708
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_hal5a")]
+position = Vector2(1133, 736)
+rotation = -1.5708
